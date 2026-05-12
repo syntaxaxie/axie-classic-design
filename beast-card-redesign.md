@@ -21,6 +21,7 @@ Beasts in Axie Classic suffer from a fundamental timing/draw dependency problem 
 
 - **Class advantage:** Beast beats Plant/Reptile/Dusk (+15% damage)
 - **Class disadvantage:** Beast loses to Aquatic/Bird/Dawn (-15% damage)
+- **Class cycle:** Plant > Aquatic > Beast > Plant. Beast beats the tanks (Plant/Reptile/Dusk) and loses to the fast classes (Aquatic/Bird/Dawn).
 - **Same-class bonus:** +10% damage when Beast uses Beast cards
 - **Morale drives:** Critical hit chance, critical hit damage multiplier (capped at 200%), Last Stand entry threshold, Last Stand turns
 
