@@ -19,8 +19,8 @@ Beasts in Axie Classic suffer from a fundamental timing/draw dependency problem 
 | Skill | 31 | +0 | 31 |
 | Morale | 43 | +3 | 61 |
 
-- **Class advantage:** Beast beats Aquatic/Bird/Dawn (+15% damage)
-- **Class disadvantage:** Beast loses to Plant/Reptile/Dusk (-15% damage)
+- **Class advantage:** Beast beats Plant/Reptile/Dusk (+15% damage)
+- **Class disadvantage:** Beast loses to Aquatic/Bird/Dawn (-15% damage)
 - **Same-class bonus:** +10% damage when Beast uses Beast cards
 - **Morale drives:** Critical hit chance, critical hit damage multiplier (capped at 200%), Last Stand entry threshold, Last Stand turns
 
@@ -84,7 +84,7 @@ All new cards stay true to the beast archetype (high damage, high morale/crit, a
 | 2 | Primal Roar | 0 | Support | 0 | 30 | Apply Fear to target for 1 turn. Draw 1 card. | Free cycle card that disrupts enemy tempo. Solves draw dependency directly. |
 | 3 | Jaw Trap | 1 | Melee | 80 | 40 | If this Axie is attacked before its turn this round, deal 150% damage instead. | Rewards being slow -- turns the speed disadvantage into a strength. |
 | 4 | Rabid Bite | 1 | Melee | 100 | 20 | Gain 1 energy if this attack crits. Apply Jinx to target for 2 turns. | Energy sustain on-crit (reliable with high morale). Jinx shuts down enemy crits. |
-| 5 | Bone Crush | 1 | Melee | 110 | 10 | Reduce target's shield by 50% before dealing damage. | Anti-shield tech. Beasts struggle against shielded Plants -- this gives them an answer. |
+| 5 | Bone Crush | 1 | Melee | 110 | 10 | Reduce target's shield by 50% before dealing damage. | Anti-shield tech. Beasts already have class advantage vs Plants but still struggle against heavy shields -- this punches through. |
 | 6 | Hunger Howl | 0 | Support | 0 | 20 | Apply Lethal to target for 2 turns. This Axie gains Morale+ for 2 turns. | Free Lethal applicator. Doesn't need low HP like Death Mark. Sets up future crits. |
 | 7 | Iron Jaw | 1 | Melee | 90 | 30 | If this Axie has more than 50% HP, gain +1 Last Stand tick at end of round. | Proactive Last Stand investment. Rewards playing it early, not just as a desperation move. |
 | 8 | Savage Snap | 1 | Melee | 105 | 20 | Deal 130% damage if target has any debuff. | Payoff card for Beasts that apply debuffs. Unconditional 105 ATK baseline is still solid. |
@@ -111,13 +111,13 @@ All new cards stay true to the beast archetype (high damage, high morale/crit, a
 | 2 | Hardened Antler | 1 | Melee | 80 | 50 | If this Axie is the last alive on its team, gain Immune for 1 turn. | Defensive horn with a strong "last man standing" trigger. Beast is often the last alive. |
 | 3 | Momentum Horn | 1 | Melee | 90 | 25 | This card's attack increases by 15 for each card this Axie has played in previous rounds (max +60). | Scaling card. Gets stronger each round the Beast survives. Rewards playing any Beast card, not specific ones. |
 | 4 | Serrated Edge | 1 | Melee | 100 | 20 | Crits from this card cannot be prevented by Jinx or cannot_crit effects. Crit damage from this card ignores the 200% cap (up to 250%). | Anti-Jinx tech. Many players counter Beast with Jinx; this punches through. |
-| 5 | Battering Ram | 1 | Melee | 95 | 30 | If target has shield, deal full damage to both shield AND HP simultaneously. | Shield piercing. Solves the Plant/Reptile wall problem without ignoring shield entirely. |
+| 5 | Battering Ram | 1 | Melee | 95 | 30 | If target has shield, deal full damage to both shield AND HP simultaneously. | Shield piercing. Even with class advantage, Plant/Reptile shields absorb Beast burst -- this punches through without ignoring shield entirely. |
 | 6 | Thorn Crown | 1 | Melee | 85 | 35 | When this Axie takes damage this round, deal 30% of damage taken back to attacker. | Retaliatory damage. Creates value from getting hit, which slow Beasts always do. |
 | 7 | Siege Breaker | 2 | Melee | 160 | 10 | Cannot be played in a combo. Apply Stun to target if their shield breaks from this attack. | Big single-card play. Removes combo dependency entirely for this card -- rewards solo play. |
 | 8 | Spiral Horn | 1 | Melee | 95 | 25 | Guaranteed crit if this Axie took damage earlier this round. | Reliable crit trigger for slow Beasts. Being hit first (speed disadvantage) becomes the enabler. |
 | 9 | Fury Horn | 1 | Melee | 70 | 20 | Gain a Fury counter (persists across rounds). At 3 Fury counters, your next Beast card deals 200% damage and consumes all counters. | Stacking mechanic across rounds. Solves timing -- you don't need cards NOW, you build toward a spike. |
 | 10 | Shedding Antler | 0 | Support | 0 | 40 | Discard 1 random non-Beast card from your hand. Draw 1 card. | Hand filtering. Actively solves draw RNG by replacing bad cards with potential Beast cards. |
-| 11 | Impale | 1 | Melee | 115 | 15 | If target is Plant or Reptile, ignore class disadvantage. | Directly addresses Beast's worst matchup. 115 ATK at full neutral damage against tanks. |
+| 11 | Impale | 1 | Melee | 115 | 15 | If target is Aquatic or Bird, ignore class disadvantage. | Directly addresses Beast's worst matchup. 115 ATK at full neutral damage against the fast classes that counter Beast. |
 | 12 | Whiplash Horn | 1 | Melee | 90 | 20 | After attacking, attack the fighter behind target for 40% damage. | Cleave damage. Reaches backline without needing special targeting, guaranteed secondary value. |
 | 13 | Bull Rush | 1 | Melee | 100 | 30 | If this Axie did not play any card last round, deal 140% damage. | Rewards patience. If you don't have the right cards one round, you get a power spike next round. |
 | 14 | Crescent Horn | 1 | Melee | 105 | 25 | Apply Chill to target for 2 turns. | Anti-Last Stand. Prevents enemies from entering Last Stand, which is the counter to Beast burst. |
@@ -210,9 +210,12 @@ All new cards stay true to the beast archetype (high damage, high morale/crit, a
 - Dying Wish (Tail #7), Last Gasp (Tail #20)
 - Undying Fury (Back #10)
 
-### Cards that address the Plant/Reptile wall problem
+### Cards that address the Aquatic/Bird speed + class disadvantage problem
+- Impale (Horn #11) -- ignores class disadvantage vs Aquatic/Bird
+
+### Cards that punch through shields (relevant vs Plant/Reptile despite class advantage)
 - Bone Crush (Mouth #5), Tearing Bite (Mouth #12)
-- Battering Ram (Horn #5), Impale (Horn #11)
+- Battering Ram (Horn #5)
 
 ### Balance Notes
 All stat values are calibrated against existing Beast card ranges (0-130 ATK, 0-50 DEF, 0-2 energy) and the damage formula (card_attack * same_class_bonus * class_advantage * combo_bonus * crit_multiplier). No card exceeds the power level of existing top-end combinations like Sinister Strike crit (130 * 1.1 * 2.0 = 286 effective) or Risky Beast in Last Stand (120 * 1.1 * 2.0 = 264 effective).
