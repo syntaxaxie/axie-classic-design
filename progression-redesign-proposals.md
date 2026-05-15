@@ -3,6 +3,18 @@
 **Date:** 2026-05-11
 **Goal:** Replace vertical progression (higher stats = win more) with horizontal progression (more options = play differently). Create a level playing field where match outcomes are determined by player skill and decisions, not Axie level or unlocked parts.
 
+## The Core Problem Being Solved
+
+This is a fundamental design shift -- moving from vertical progression (higher stats = win more) to horizontal progression (more options = play differently).
+
+The current system creates a progression treadmill that determines match outcomes: higher-level Axies with more unlocked parts beat lower-level ones regardless of skill. This means:
+
+- New players lose to veterans because of stats, not decisions
+- The "game" is grinding levels, not playing well
+- Matchmaking can't create fair matches across progression tiers
+
+The goal is progression that feels rewarding without creating power gaps. Players should feel like they're getting stronger at the *game*, not just making their numbers bigger.
+
 **Design Principles:**
 1. No progression system should create a power gap between players
 2. Rewards should be cosmetic, knowledge-based, or social (not stat increases)
